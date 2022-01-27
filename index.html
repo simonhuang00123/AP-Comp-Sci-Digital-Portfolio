@@ -55,6 +55,20 @@
               <a href="#4.10">4.10</a>
             </div>
         </div> 
+        <div class="dropdown" id="dropdown5">
+            <button class="dropbtn" id="dropbtn5">Unit 5
+            </button>
+            <div class="dropdown-content" id="dropdown-content5">
+              <a href="#5.2">5.2</a>
+              <a href="#5.3">5.3</a>
+              <a href="#5.4">5.4</a>
+              <a href="#5.5">5.5</a>
+              <a href="#5.6">5.6</a>
+              <a href="#5.7">5.7</a>
+              <a href="#5.8">5.8</a>
+              <a href="#5.10">5.10</a>
+            </div>
+        </div> 
         <button id="random">Random Color!</button>
       </div>
       <div id=space></div>
@@ -797,6 +811,353 @@
             
             </p>
         </div>
+        <div class="subunit" id="5.2">
+            <div id="space"></div>
+            <h2>5.2 - Logo, Part 2</h2>
+            <p>
+            1) Choose an interesting design that your Logo app made. 
+            <br>
+            1a) Insert a screenshot of the design from your device.
+            <br>
+            <img src = "interestingdesign.png">
+            <br>
+            <br>
+            1b) Insert a screenshot of the code that created the design.
+            <br>
+            <img src = "interestingdesigncode.png">
+            <br>
+            <br>
+            2) Consider the following two Logo procedure calls:
+            <br>
+            2a) What is the limitation of the procedure forward()?
+            <br>
+            The forward() procedure does not have a parameter meaning that it can only move forward a fixed amount. 
+            <br>
+            <br>
+            2b) 
+            <br>
+            What improvement is made by adding a parameter and updating the procedure to forward (distance)?
+            By adding a parameter, you can specify how much you want to move forward. 
+            <br>
+            <br>
+            3) Consider the following two Logo procedures.
+            <br>
+            3a) What is the limitation of the prodecure turn ()?
+            <br>
+            The turn procedure can only turn a fixed amount.
+            <br>
+            <br>
+            3b) By abstracting it with a parameter, you allow it to make a turn at any angle you specify, instead of a fixed amount.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.3">
+            <div id="space"></div>
+            <h2>5.3 - Search Algorithms</h2>
+            <p>
+            1) (POGIL) Define a pseudocode algorithm that will efficiently play the guessing game.
+            <br>
+            If too low, take the top half of the numbers and guess half of that
+            <br>
+            Else, take the bottom half of the numbers and guess in the middle of that. 
+            <br>
+            If incorrect, repeat the previous conditional.
+            <br>
+            <br>
+            2) (POGIL) To guess a number between 1 and 100, what's the maximum number of guesses your algorithm would take?
+            <br>
+            It would take 7 guesses at most.
+            <br>
+            <br>
+            3) (POGIL) To guess a number between 1 and 500, what's the maximum number of guesses your algorithm would take?
+            <br>
+            It would take 9 guesses at most.
+            <br>
+            4) Suppose you have a deck of cards and you want to find the Ace of Spades. 
+            If the deck is shuffled, which is the best search algorithm to use and why?
+            <br>
+            The best search algorithm would probably be sequential because we can not use a binary search on a shuffled deck.
+            <br>
+            <br>
+            5) Give an example of a search problem you encounter in everyday life. 
+            Does it use sequential, binary, or some other search algorithm?
+            <br>
+            My searching through my backback for my notebooks is a search problem. I use sequential search to find my notebooks.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.4">
+            <div id="space"></div>
+            <h2>5.4 - Sorting Algorithms</h2>
+            <p>
+            1) Bubble and Merge Sort are referred to as comparison sorts because the values of the two pieces of data are compared during each step. 
+            Why are the radix and bucket sort not comparison sorts?
+            <br>
+            Radix and bucket sort are not comparison sorts because they do not compare one item with another throughout the whole process.
+            <br>
+            <br>
+            2) Which sort do you think would be the fastest if you had to sort more than one deck of cards? Why?
+            <br>
+            I think that bucket sort would be the quickest because it groups things while other sorting algorithms do things one at a time.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.5">
+            <div id="space"></div>
+            <h2>5.5 Quiz App</h2>
+            <p>
+            1) Consider one of the lists used in this program.
+            <br>
+            1a) What is the name of the list?
+            <br>
+            questionList
+            <br>
+            <br>
+            1b) Paste a screenshot of where the list has elements added to it.
+            <br>
+            <img src = "listelements.png">
+            <br>
+            <br>
+            1c) Paste a screenshot of where a list element is accessed.
+            <br>
+            <img src = "elementaccessed.png">
+            <br>
+            <br>
+            1d) What does the data contained in the list represent in the program?
+            <br>
+            It represents all the questions we will display during the quiz. 
+            <br>
+            <br>
+            1e) Explain how the selected list manages complexity in your program code by explaining why your program code could not be written, or how it would be written differently, if you did not use the list.
+            <br>
+            If we did not use the list, we would not be able to access our questions, making it very difficult to display them. 
+            <br>
+            <br>
+            2) Describe how parallel lists were used in this app. 
+            Why was the parallel structure of the lists necessary?
+            <br>
+            We ordered the questions, answers and pictures so that the index for a certain question would be the same as the index for the corresponding image and answer. Wihtout it, it would be very hard to organize which answer and image went with which question. 
+            <br>
+            <br>
+            3) Include screenshots of your code for exercises 2 and 3 from the Enhancements section.
+            <br>
+            <img src = "joinblock.png">
+            <br>
+            <img src = "randombutton.png">
+            <br>
+            <br>
+            4) Include a screenshot of the code that added your extra question (exercise 4). 
+            Explain why the code for the buttons worked without any changes after the addition of the extra question.
+            <br>
+            <img src = "4thcode.png">
+            <br>
+            This is because we are adding 1 to index and index can go up as much as it needs to for the size of our lists.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.6">
+            <div id="space"></div>
+            <h2>5.6 Quiz App Projects</h2>
+            <p>
+            1) Consider your solution for the second project that added a search button.
+            <br>
+            1a) Provide a screenshot of the search button procedure.
+            <br>
+            <img src = "searchprocedure.png">
+            <br>
+            <br>
+            1b) Provide a screenshot of the code that calls the search procedure.
+            <br>
+            <img src = "searchprocedurecall.png">
+            <br>
+            <br>
+            1c) Describe what the search procedure does. 
+            <br>
+            The search procedure uses a counter called i and checks questions to see if they contain the keyword parameter that was passed in. If it does, it will update app variable index to our counter and bring us to that question.
+            <br>
+            <br>
+            1d) Describe how the search procedure contributes to the overall functionality of the program.
+            <br>
+            It allows for users to search for questions using keywords.
+            <br>
+            <br>
+            2) Consider testing your search procedure.
+            <br>
+            2a) Describe two possible calls to the search procedure that pass a different argument and cause a different segment of the search procedure to execute.
+            <br>
+            Calling the procedure with a parameter of "NASA" and "fdjklsa;fdsa" will cause different parts of the procedure to execute.
+            <br>
+            <br>
+            2b) Describe the condition(s) being tested by each call you described.
+            <br>
+            If I call and pass in "NASA" as a parameter, the first part of my conditional will execute, bringing me to the second question. If I search for "fdjklsa;fdsa", it will not be found and the second part of my conditional will be running, which adds 1 to the counter.
+            <br>
+            <br>
+            2c) Identify the results of each call you desbribed. 
+            <br>
+            For "NASA" as the parameter, I would expect to be moved to question #2, but for the "fdjklsa;fdsa" parameter, I would not expect the question to change at all.
+            <br>
+            <br>
+            3) Write AP text-style pseudocode for a linear search that searches through a list to find an item x. It should display found if the x is equal to an item in the list.
+            <br>
+            For each item in list {
+                <br>
+                if (item = x) {
+                    <br>
+                    display found
+                    <br>
+                }
+                <br>
+            }
+            <br>
+            <br>
+            4) Give brief descriptions of the enhancements you added to your app for the third project, a quiz topic of your own choosing. 
+            Provide screenshots of important blocks and describe how you used them to solve certain programming problems.
+            <br> 
+
+            </p>
+        </div >
+        <div class="subunit" id="5.7">
+            <div id="space"></div>
+            <h2>5.7 Analyzing Algorithms</h2>
+            <p>
+            1) Present the results and the analysis you did for the search experiment in this lesson.
+            <br>
+            1a) Paste the table of running times you observed. 
+            <br>
+            <img src = "runtimetable.png">
+            <br>
+            <br>
+            1b) Paste the graph you created.
+            <br>
+            <img src = "runtimegraph.png">
+            <br>
+            <br>
+            1c) Write the conclusions you reached regarding the search algorithms. Provide a clear description, referring to your graphs and your data and graphs, to explain how you arrived at your conclusions.
+            <br>
+            I think that search algorithm 1 was a sequential search because it was very slow with large lists. I think that search algorithm 2 is a binary search because it performed well compared to the first algorithm when the list sizes were large.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.8">
+            <div id="space"></div>
+            <h2>5.8 Limits of Algorithms</h2>
+            <p>
+            1) (POGIL) A password scheme consists of a minimum password length and the different types of symbols (i.e., letters, numbers, specials) that can be used in the password. Using the Password Strength Calculator, determine the optimal scheme for withstanding a brute force attack of at least 10 years by an ordinary PC performing 100 million tests per second.
+            <br>
+            Using letters and special characters and a password length of 9, you can withstand a brute force attack up to 81.6 years.
+            <br>
+            <br>
+            2) (POGIL) According to this 2020 article, a password-cracking computer can try 669 million passwords per second. How would you have to modify your scheme to withstand a 10-year attack by this specially designed computer?
+            <br>
+            We would not have to modify our scheme because it can withstand over 10 years, even against a computer that can try 699 million passwords per second.
+            <br>
+            <br>
+            3) (POGIL) After you’ve calculated the estimated number of passwords that can be checked per second for the next year, use the Password Strength Calculator to determine an optimal password scheme.
+            <br>
+            3a) How long should the password be?
+            <br>
+            The password should be 9 characters long.
+            <br>
+            <br>
+            3b) What combination of characters should it include?
+            <br>
+            It would use letters and special characters. 
+            <br>
+            <br>
+            4) Starting and ending at Mission High School, what route would the nearest neighbor heuristic produce for the proposed visits?
+            <br>
+            Mission to Galileo to Lincoln to Burton then back to Misson
+            <br>
+            <br>
+            5) Starting and ending at Mission High School, find the optimal route that visits all schools. (HINT: To prove that your route is optimal, you'll have to compare it to all possible routes starting and ending at Mission High School.)
+            <br>
+            Mission to Galileo then Lincoln then Burton then back to mission. 
+            <br>
+            <br>
+            6) For routes starting and ending at Mission High School, what is the nearest neighbor route and the optimal route? What does this show you about the nearest neighbor heuristic?
+            <br>
+            The routes are the same. This shows that the nearest neighbor heuristic is the optimal route. 
+            <br>
+            <br>
+            7) This lesson introduces the concept of an intractable problem. 
+            <br>
+            7a) Explain in your own words what it means for a problem to be intractable.
+            <br>
+            If a problem is intractable it means that it is basically impossible to solve because all the known solutions are not viable due to inefficiencies. 
+            <br>
+            <br>
+            7b) Why is that a good thing when it comes to passwords?
+            <br>
+            We can make passwords that include more possibilities than a computer can guess. 
+            <br>
+            <br>
+            8) Describe a heuristic you use in your everyday life. Why is a heuristic needed for this situation?
+            <br>
+            When I try to estimate how much time it would take for me to complete a task like doing my homework.
+
+            </p>
+        </div >
+        <div class="subunit" id="5.9">
+            <div id="space"></div>
+            <h2>5.9 Parallel Computing</h2>
+            <p>
+            1) (POGIL) Explain how a parallel algorithm speeds up a solution to a problem compared to a sequential algorithm using the POGIL activities with searching and sorting cards as examples.
+            <br>
+            A parallel algorithm is an algorithm that can do  multiple things at once, allowing it to be more productive. For example, during the POGIL activity, teams split up the tasks and worked on more than one task at a time. That is much faster than doing one task before starting another.
+            <br>
+            <br>
+            2) (POGIL) What was the speed up you measured in these activities?
+            <br>
+            It was around the amount of time divided by the amount of group members.
+            <br>
+            <br>
+            3) (POGIL) Did the speed up you measured change proportionally to the number of processors? For example, if you doubled the number of processors, did the speed double, less than double, or more than double? Explain what you believe led to the results you observed.
+            <br>
+            It is very close but not exact because some tasks take slightly longer than others.
+            <br>
+            <br>
+            4) What are the benfits and challenges of parallel computing?
+            <br>
+            The main benefit is to speed up the process. Some challenges are coordinating the different operations that are going on. 
+            </p>
+        </div >
+        <div class="subunit" id="5.10">
+            <div id="space"></div>
+            <h2>5.10 Impacts of CS: Web Searches</h2>
+            <p>
+            1) How do web search tools make it more efficient to find information?
+            <br>
+            Things like history make it quicker to find the information that users may be looking for.
+            <br>
+            <br>
+            2) When you type a word or phrase into the Google search engine, what is the search algorithm that is being used?  Explain in your own words the process used by Google's search engine.
+            <br>
+            The search algorithm being used is PageRank. PageRank determines how important a page is by checking things like how many links to the page there are. 
+            <br>
+            <br>
+            3) What is a captcha? How has the collective efforts of Internet users contributed to analyzing images through captchas?
+            <br>
+            Captcha is when distorted letters are are used to check if a user is an actual human or a bot. The goal of it is to stop hackers and spammers.
+            <br>
+            <br>
+            4) "The architecture of human knowledge has changed as a result of search." Do you agree? Explain your reasoning.
+            <br>
+            I agree because with search, humans have a ton of information that they are able to access easily. We now open up many more possibilities and things become easier to learn and do. 
+            <br>
+            <br>
+            5) What are the differences between Figures 4.10 and Figure 4.11 in the book? 
+            Why are there differences even though they are both a Google search results page?
+            <br>
+            The search results are different. The search in 4.11 looks like it is trying to display the search result as something bad. I think there are differences because of the location. Something bad probably happened in China and they want to cover it up. 
+            <br>
+            <br>
+            6) How do you think mobile computing might have influenced web searches? 
+            Would you retain your search history or delete it? Why?
+            <br>
+            
+            </p>
+        </div >
     </div>
 </body>
 </html>

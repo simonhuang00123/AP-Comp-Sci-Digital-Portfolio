@@ -111,6 +111,30 @@ h2 {
     margin-left: 600px;
     margin-top: 55px;
 }
+
+#dropdown5 #dropbtn5 {  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size:25px;
+    margin-left: 800px;
+    position: absolute;
+}
+  
+#dropdown-content5 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 800px;
+    margin-top: 55px;
+}
   
 .dropdown-content a {
     float: none;
@@ -134,6 +158,10 @@ h2 {
 }
 
 #dropdown4:hover #dropdown-content4 {
+    display: block;
+}
+
+#dropdown5:hover #dropdown-content5 {
     display: block;
 }
 
