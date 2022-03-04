@@ -68,7 +68,20 @@
               <a href="#5.8">5.8</a>
               <a href="#5.10">5.10</a>
             </div>
-        </div> 
+        </div>
+        <div class="dropdown" id="dropdown6">
+            <button class="dropbtn" id="dropbtn6">Unit 6
+            </button>
+            <div class="dropdown-content" id="dropdown-content6">
+              <a href="#6.2">6.2</a>
+              <a href="#6.3">6.3</a>
+              <a href="#6.4">6.4</a>
+              <a href="#6.6">6.6</a>
+              <a href="#6.7">6.7</a>
+              <a href="#6.9">6.9</a>
+              <a href="#6.10">6.10</a>
+            </div>
+        </div>  
         <button id="random">Random Color!</button>
       </div>
       <div id=space></div>
@@ -1200,6 +1213,156 @@
             <br>
             <br>
             Another alternative to using another browser is limiting what Google logs. You can turn off your google account which will unsync the connection between Google and your browser. This also gives the option to delete things like history. The upside is that you can keep using a browser you are familiar with but it still may have things Google is known for like ads and a little logging. It may just be easier to swtich to another browser when searching.
+            </p>
+        </div >
+        <div class="subunit" id="6.2">
+            <div id="space"></div>
+            <h2>6.2 Internet: Basic Concepts and Terminology</h2>
+            <p>
+            1) What is bandwidth? What do you think affects the differences in bandwidth globally as well as in different locations in the U.S.?
+            <br>
+            Bandwidth is the maximum rate that data can transfer. I think the most important factor that influences differences in bandwidth is money.
+            <br>
+            <br>
+            2) What is latency? How does it differ from bandwidth? Why is it a useful measure?
+            <br>
+            Latency is the delay between data transfer. Latency is the time, and bandwidth is the amount. This is useful so that you know how good your connection is. 
+            <br>
+            <br>
+            3) What is the digital divide? What are some ways to reduce the effects of the digital divide?
+            <br>
+            The digital divide is the gap between the people who have basic internet access and those that do not. Some ways to reduce this effect is by helping those who are in need. We can provide internet service and devices to those that are too poor to afford it. 
+
+            </p>
+        </div >
+        <div class="subunit" id="6.4">
+            <div id="space"></div>
+            <h2>6.4 Internet Architecture and Packet Switching</h2>
+            <p>
+            1) How does the geographical distance between the source and destination hosts on a network affect latency?
+            <br>
+            Since the signals can not move faster than the speed of light, there is a limit to the speed at which signals can be received. So the farther away you are, the higher your latency would be.
+            <br>
+            <br>
+            2) What are benefits of packet switching?
+            <br>
+            Lost data packets are more rare and it is also more cost-effective.
+            <br>
+            <br>
+            3) Missing Packets. What should happen if a packet goes missing? Who (which layer) would handle this? What action would they have to take? And what additional information would be needed in the packet in order to handle it?
+            <br>
+            If a packet goes missing, the sender can resend it. The transport layer would take care of this. The sender would need confirmations from the receiver. 
+            <br>
+            <br>
+            4) Security/Privacy. As the packets are being transmitted through the network, can people other than the sender and receiver read the messages? What methods can we use to protect the message?
+            <br>
+            Others can see it and we need to block them off from seeing it using techniques like encryption. 
+            <br>
+            <br>
+            5) What is the primary benefit of making a computing system fault-tolerant?
+            The system will continue running ever after something breaks. This can allow you to do things like troubleshoot or use the system while there are problems. 
+            
+            </p>
+        </div >
+        <div class="subunit" id="6.6">
+            <div id="space"></div>
+            <h2>6.6 Crytography Basics</h2>
+            <p>
+            1) Explain briefly how the following three substitution ciphers (Caesar cipher, Simple substitution cipher, Vigenere cipher) (a) Encrypt (b) Decrypt (c) Can be broken
+            <br>
+            Caesar cipher will shift the letters of the message by 3 to encrypt. To decrypt, you shift 3 letters the other way. You can break caesar cipher with a shift of 3. To encrypt using simple substitution, you use a random shift number. To decrypt, you shift the other way. To break it, you have to find the character frequencies used in the language being used. To encrypt using Vigenere cipher, you choose a key that you can then convert into multiple shifts. Then use the specific amount of shifts to get encrypted message. To decrypt, you need to get the key and shift the other way. To break this techinique, you have to find patterns in character usage and determine the length of the key. You can then use something like a brute force attack to find the message.
+            <br>
+            <br>
+            2) Explain why the benefits of symmetric ciphers are negated by the issue of key exchange.
+            <br>
+            Both the sender and reciever need the same key and that can be difficult. If somebody else manages to get the key, they can see the messages too. This means the message was encrypted for no reason.
+            <br>
+            <br>
+
+            </p>
+        </div >
+        <div class="subunit" id="6.7">
+            <div id="space"></div>
+            <h2>6.7 Cryptography: Securing The Internet</h2>
+            <p>
+            1) Describe in your own words how internet sites use public key encryption and certificates to provide security.
+            <br>
+            Certificates are used to check each website and public key encryption uses a pair of keys, one that is private, so that nobody who is not supposed to receive the message will see it.
+            <br>
+            <br>
+            2) Cryptography relies on open standards, protocols or standards that are publicly available. Why are open standards necessary for internet security?
+            <br>
+            Everything needs to be following the same set of rules so that we can do security checks the same way for everything using those sets of rules.
+            <br>
+            <br>
+            3) What website (not mentioned in this lesson) do you visit that uses https? What data does the site use that needs to be secure?
+            <br>
+            I use google classroom. Some of the data on the site that needs to be secure is my personal information and password.
+
+            </p>
+        </div >
+        <div class="subunit" id="6.9">
+            <div id="space"></div>
+            <h2>6.9 Cybersecurity</h2>
+            <p>
+            1) (From Activity) Which activity did you complete? Record your answers/results from the activity you completed.
+            <br>
+            I completed the phishing quiz. 
+            <br>
+            <img src = "phishing quiz.png" width="600px">
+            <br>
+            <br>
+            2) Descrive the benefits of multifactor authentication.
+            <br>
+            It adds an extra layer of security that would be very hard for hackers to get through.
+            <br>
+            <br>
+            3) Describe at least two ways that someone might gain unauthorized access to a network or an individual’s information.
+            <br>
+            Brute force attacks and getting phished are two ways that somebody could get unathorized access.
+
+            </p>
+        </div >
+        <div class="subunit" id="6.10">
+            <div id="space"></div>
+            <h2>6.10 Impacts of CS: Citizen Science AND Cryptography and the Government</h2>
+            <p>
+            1) (Activity) Which citizen science app did you explore? What is the purpose of the app? Describe the functionality of the app.
+            <br>
+            I explored the Healthy vs non-healthy foods app. The purpose was to help those that were struggling against obesity. We were supposed to take a survey for to provide data.
+            <br>
+            <br>
+            2) (Activity) What data does the app use and how does the app use the data collected?
+            <br>
+            The app uses food choices that we chose and does research on it. 
+            <br>
+            <br>
+            3) (Activity) What are the intended positive impacts of your citizen science app? What might be some unintended negative impacts? You might consider impacts on society, the economy, culture, etc.
+            <br>
+            It is intended to help those that struggle against obesity. A nonintended impact might be offending some people because people complained about how there was only 2 genders to choose from on the survey. 
+            <br>
+            <br>
+            <br>
+            BLOWN TO BITS 
+            <br>
+            <br>
+            1) What does it mean to say that the government would like to have a back door to the encrypted data on a mobile phone?
+            <br>
+            It means that the government wants a key made for them that can decrypt data from any mobile phone.
+            <br>
+            <br>
+            2) What are the main legal and ethical reasons for letting the government have a back door?
+            <br>
+            The government could get an early warning system about events that could be dangerous to the public. 
+            <br>
+            <br>
+            3) What are the main legal and ethical reasons against letting the government have a back door?
+            If the government has a back door, it could put mobile phone companies down because now their information can no longer be trusted in their hands. The government has no right to know everything you do online and you have the right of privacy.
+            <br>
+            <br>
+            4) Do you think Apple should abide by the Court’s decision and unlock the mobile phone in the San Bernardino case? Explain.
+            I do not think that apple should unlock the mobile phone in the case because if they do so, they will also be required to do so in the future. This just puts every mobile phone user's privacy in jeopardy. At best, Apple can try unlocking the phone themselves and keyword search for anything dangerous so that they somewhat keep the persons privacy and potentially stop something dangerous in the future.
+
             </p>
         </div >
     </div>
